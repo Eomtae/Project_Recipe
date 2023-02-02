@@ -1,0 +1,318 @@
+@charset "UTF-8";
+@font-face {
+  font-family: "All";
+  src: url("https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2201-2@1.0/GangwonEdu_OTFBoldA.woff") format("woff");
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: "Strong";
+  src: url("https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2201-2@1.0/GangwonEduPowerExtraBoldA.woff") format("woff");
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: "good";
+  src: url("https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_20-04@2.1/NEXON Lv1 Gothic OTF.woff") format("woff");
+  font-weight: normal;
+  font-style: normal;
+}
+html,
+body {
+  margin: 0 auto;
+  font-size: 16px;
+  width: 100%;
+  padding: 0;
+}
+
+h1,
+h2,
+h3,
+h4,
+p,
+figure {
+  margin: 0;
+}
+
+ul,
+li {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+
+ul img,
+li img {
+  vertical-align: middle;
+}
+
+a {
+  text-decoration: none;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+a,
+i,
+em,
+strong,
+b,
+code,
+::after,
+::before {
+  display: inline-block;
+}
+
+#root {
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+}
+#root .mainbox {
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+}
+#root .mainbox .Whole {
+  filter: blur(20px);
+  position: fixed;
+  width: 100%;
+  z-index: -1;
+}
+#root figure {
+  width: 80%;
+  margin: 0 auto;
+}
+#root main {
+  width: 65%;
+  height: 70vh;
+  overflow: hidden;
+  padding: 2%;
+  margin: 0 auto;
+  font-family: "good";
+  background-color: rgba(255, 255, 255, 0.568);
+  border-radius: 25px;
+  box-shadow: 3px 3px 10px rgb(151, 150, 150);
+  position: relative;
+}
+#root main section {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding-top: 10px;
+}
+#root main .flexbox {
+  overflow: auto;
+  width: 100%;
+  height: 60vh;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+#root main .flexbox .recipe-content {
+  width: 25%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 1.25rem;
+  line-height: 2.5;
+}
+#root main .flexbox .recipe-content img {
+  width: 11.25rem;
+  height: 11.25rem;
+  border-radius: 25px;
+  box-shadow: 3px 3px 10px rgb(151, 150, 150);
+  cursor: pointer;
+}
+#root main .flexbox .recipe-content:hover {
+  transform: translateY(-5px);
+}
+#root main .flexbox .recipe-content h1 {
+  font-size: 1rem;
+}
+#root main .flexbox::-webkit-scrollbar {
+  width: 5px;
+}
+#root main .flexbox::-webkit-scrollbar-thumb {
+  background-color: #000;
+  border-radius: 25px;
+  height: 20%;
+}
+#root main .flexbox::-webkit-scrollbar-track {
+  background: rgba(33, 122, 244, 0.1); /*스크롤바 뒷 배경 색상*/
+}
+#root main .mainbox-tab {
+  width: 70%;
+  display: flex;
+}
+#root main .mainbox-tab button {
+  width: 100%;
+  background-color: transparent;
+  border: none;
+  color: #000;
+  cursor: pointer;
+  font-family: "All";
+}
+#root main .mainbox-tab button p {
+  font-family: "Strong";
+  font-size: 2rem;
+  font-weight: 900;
+}
+#root main .mainbox-tab a {
+  font-size: 2rem;
+}
+#root main .tab {
+  width: 70%;
+  display: flex;
+  height: 3.125rem;
+}
+#root main .tab button {
+  width: 100%;
+  background-color: transparent;
+  border: none;
+  color: #000;
+  cursor: pointer;
+  font-family: "good";
+  font-size: 1.25rem;
+  font-weight: 700;
+}
+#root main .tab a {
+  font-size: 2rem;
+}
+#root main .big-box {
+  padding-top: 10%;
+}
+#root main .big-box .main-imgbox {
+  width: 70%;
+  display: flex;
+}
+#root main .big-box .main-imgbox img {
+  width: 100%;
+  border-radius: 25px;
+  box-shadow: 3px 3px 10px rgb(151, 150, 150);
+}
+#root main .big-box .main-imgbox .detail {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  align-items: center;
+  margin-left: 10%;
+}
+#root main .big-box .main-imgbox .detail span {
+  text-align: center;
+  font-size: 2.375rem;
+  font-family: "good";
+  font-weight: bold;
+}
+#root main .big-box .main-imgbox .detail .recipe-go {
+  width: 10.25rem;
+  height: 3rem;
+  border: none;
+  background-color: rgba(255, 255, 255, 0);
+  z-index: 888;
+  font-size: 1rem;
+  font-family: "good";
+  border-radius: 25px;
+  padding: 0 10px;
+}
+#root main .big-box .main-imgbox .detail .recipe-go:hover {
+  background: #000;
+  color: #D9D9D9;
+  border: none;
+  font-size: 1rem;
+  transition: all 0.3s ease-in-out;
+  cursor: pointer;
+}
+#root main .big-box .loop {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  -webkit-animation: bannermove 100s linear infinite;
+          animation: bannermove 100s linear infinite;
+  width: 120px;
+  position: absolute;
+  right: 0;
+  margin-right: 100px;
+}
+@-webkit-keyframes bannermove {
+  0% {
+    transform: translate(0, 0);
+  }
+  100% {
+    transform: translate(0, -100%);
+  }
+}
+@keyframes bannermove {
+  0% {
+    transform: translate(0, 0);
+  }
+  100% {
+    transform: translate(0, -100%);
+  }
+}
+#root main .big-box .loop img {
+  width: 7.5rem;
+  height: 7.5rem;
+  margin: 10px 0;
+  border-radius: 25px;
+}
+#root main .detail-content {
+  width: 100%;
+  height: 55vh;
+  display: flex;
+  text-align: center;
+  justify-content: space-evenly;
+}
+#root main .detail-content .detail-left {
+  padding-top: 1.875rem;
+  width: 40%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+#root main .detail-content .detail-left img {
+  width: 70%;
+  border-radius: 25px;
+  box-shadow: 3px 3px 10px rgb(146, 146, 146);
+}
+#root main .detail-content .detail-left .info {
+  width: 70%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  font-size: 1.125rem;
+}
+#root main .detail-content .detail-right {
+  width: 40%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+}
+#root main .detail-content .detail-right a {
+  cursor: inherit;
+}
+#root main .detail-content .detail-right span {
+  line-height: 2.2;
+  font-size: 1.25rem;
+}
+#root main .detail-content .detail-right .how-go {
+  width: 10.375rem;
+  height: 3rem;
+  background-color: transparent;
+  border-radius: 25px;
+  border: none;
+  color: #000;
+  font-family: "good";
+  cursor: pointer;
+}
+#root main .detail-content .detail-right .how-go:hover {
+  background: #000;
+  color: #D9D9D9;
+}/*# sourceMappingURL=App.css.map */
