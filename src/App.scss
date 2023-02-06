@@ -161,9 +161,9 @@ code,
             cursor: pointer;
             font-family: "All";   
             p{
-              font-family: "Strong";
+              font-family: "All";
               font-size: 2rem;
-              font-weight: 900;
+              font-weight: 700;
             }
         }
       a{
@@ -210,6 +210,7 @@ code,
             font-size: 2.375rem;
             font-family: "good";
             font-weight: bold;
+            line-height: 2;
           }
          .recipe-go{
           width: 10.25rem;
@@ -286,6 +287,7 @@ code,
           flex-direction: column;
           align-items: center;
           font-size: 1.125rem;
+          line-height: 1.7;
         }
       }
       .detail-right{
@@ -302,14 +304,15 @@ code,
           font-size: 1.25rem;
         }
         .how-go{
-          width: 10.375rem;
+          width: 13rem;
           height: 3rem;
           background-color: transparent;
           border-radius: 25px;
           border: none;
           color: #000;
-          font-family: 'good';
+          font-family: 'All';
           cursor: pointer;
+          font-size: 1.5rem;
           
          }
          

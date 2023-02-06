@@ -108,13 +108,16 @@ return (
       <SwiperSlide>
         <p>{arr?.MANUAL02}</p>
         <img src={arr?.MANUAL_IMG02} alt="" />
-      </SwiperSlide><SwiperSlide>
+      </SwiperSlide>
+      <SwiperSlide>
         <p>{arr?.MANUAL03}</p>
         <img src={arr?.MANUAL_IMG03} alt="" />
-      </SwiperSlide><SwiperSlide>
+      </SwiperSlide>
+      <SwiperSlide>
         <p>{arr?.MANUAL04}</p>
         <img src={arr?.MANUAL_IMG04} alt="" />
-      </SwiperSlide><SwiperSlide>
+      </SwiperSlide>
+      <SwiperSlide>
         <p>{arr?.MANUAL05}</p>
         <img src={arr?.MANUAL_IMG05} alt="" />
       </SwiperSlide>

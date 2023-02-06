@@ -68,11 +68,11 @@ const goHow = (detail)=>{
       <img src={detail?.ATT_FILE_NO_MAIN} alt=""/>
         <div className='info'>
           <p>
-              탄수화물:{detail?.INFO_CAR}g <br></br>
               열량:{detail?.INFO_ENG}kcal <br></br>
-              지방:{detail?.INFO_FAT}g <br></br>
-              나트륨:{detail?.INFO_NA}mg <br></br>
               단백질:{detail?.INFO_PRO}g <br></br>
+              지방:{detail?.INFO_FAT}g <br></br>
+              탄수화물:{detail?.INFO_CAR}g <br></br>
+              나트륨:{detail?.INFO_NA}mg <br></br>
           </p>
 
 
@@ -86,6 +86,6 @@ const goHow = (detail)=>{
 
   </div>
   )
-}
+} 
 
 export default Detail
