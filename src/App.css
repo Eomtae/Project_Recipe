@@ -105,10 +105,45 @@ code,
   align-items: center;
   padding-top: 10px;
 }
+#root main .mySwiper {
+  width: 100%;
+  height: 50vh;
+  display: flex;
+  flex-direction: column;
+  margin-top: 5%;
+  align-items: center;
+  text-align: center;
+}
+#root main .mySwiper .swiper-pagination-clickable .swiper-pagination-bullet {
+  background-color: #000;
+}
+#root main .mySwiper .swiper-wrapper {
+  display: flex;
+  align-items: center;
+}
+#root main .mySwiper .swiper-wrapper .swiper-slide {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+#root main .mySwiper .swiper-wrapper .method img {
+  width: 12.5rem;
+  height: 7.5rem;
+  border-radius: 25px;
+}
+#root main .mySwiper .swiper-wrapper .method p {
+  line-height: 1.7;
+}
+#root main .mySwiper .swiper-button-prev {
+  color: black;
+}
+#root main .mySwiper .swiper-button-next {
+  color: black;
+}
 #root main .flexbox {
   overflow: auto;
   width: 100%;
-  height: 60vh;
+  height: 50vh;
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
@@ -130,7 +165,7 @@ code,
   cursor: pointer;
 }
 #root main .flexbox .recipe-content:hover {
-  transform: translateY(-5px);
+  transform: translateY(-3px);
 }
 #root main .flexbox .recipe-content h1 {
   font-size: 1rem;
@@ -215,7 +250,7 @@ code,
   width: 10.25rem;
   height: 3rem;
   border: none;
-  background-color: rgba(255, 255, 255, 0);
+  background-color: transparent;
   z-index: 888;
   font-size: 1rem;
   font-family: "good";
@@ -223,8 +258,8 @@ code,
   padding: 0 10px;
 }
 #root main .big-box .main-imgbox .detail .recipe-go:hover {
-  background: #000;
-  color: #D9D9D9;
+  background: #f8c4a1;
+  color: #000;
   border: none;
   font-size: 1rem;
   transition: all 0.3s ease-in-out;
@@ -278,12 +313,12 @@ code,
   justify-content: space-between;
 }
 #root main .detail-content .detail-left img {
-  width: 70%;
+  width: 60%;
   border-radius: 25px;
   box-shadow: 3px 3px 10px rgb(146, 146, 146);
 }
 #root main .detail-content .detail-left .info {
-  width: 70%;
+  width: 60%;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -314,8 +349,9 @@ code,
   font-family: "All";
   cursor: pointer;
   font-size: 1.5rem;
+  background-color: transparent;
+  transition: all 0.5s;
 }
 #root main .detail-content .detail-right .how-go:hover {
-  background: #000;
-  color: #D9D9D9;
+  background-color: #f8c4a1;
 }/*# sourceMappingURL=App.css.map */

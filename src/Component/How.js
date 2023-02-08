@@ -68,8 +68,8 @@ const How = () => {
     // const result=[];
     
     let abc=  Row.filter(object => object.RCP_NM == params.id)
-    console.log(abc)
-    console.log(abc[0])
+    // console.log(abc)
+    // console.log(abc[0])
      // const result = dataarr[0].filter(object => object.RCP_NM == params.id);
      // console.log(dataarr)
      setArr(abc[0])
@@ -87,7 +87,7 @@ const How = () => {
 
 
 return (
-  <div>
+  <>
      <Swiper
       slidesPerView={3}
       spaceBetween={30}
@@ -99,34 +99,46 @@ return (
       }}
       navigation={true}
       modules={[Pagination, Navigation]}
-      className="mySwiper"
+      className="mySwiper "
     >
       <SwiperSlide>
+        <div className='method'>
         <p>{arr?.MANUAL01}</p>
         <img src={arr?.MANUAL_IMG01} alt="" />
+        </div>
       </SwiperSlide>
       <SwiperSlide>
+        <div className='method'>
         <p>{arr?.MANUAL02}</p>
         <img src={arr?.MANUAL_IMG02} alt="" />
+        </div>
       </SwiperSlide>
       <SwiperSlide>
+        <div className='method'>
         <p>{arr?.MANUAL03}</p>
         <img src={arr?.MANUAL_IMG03} alt="" />
+        </div>
       </SwiperSlide>
       <SwiperSlide>
+        <div className='method'>
         <p>{arr?.MANUAL04}</p>
         <img src={arr?.MANUAL_IMG04} alt="" />
+        </div>
       </SwiperSlide>
       <SwiperSlide>
+        <div className='method'>
         <p>{arr?.MANUAL05}</p>
         <img src={arr?.MANUAL_IMG05} alt="" />
+        </div>
       </SwiperSlide>
       <SwiperSlide>
+        <div className='method'>
         <p>{arr?.MANUAL06}</p>
         <img src={arr?.MANUAL_IMG06} alt="" />
+        </div>
       </SwiperSlide>
     </Swiper> 
-  </div>
+  </>
 );
 }
 
