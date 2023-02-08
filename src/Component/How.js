@@ -25,8 +25,8 @@ const How = () => {
   const [arr,setArr] = useState()
   const [count,setCount] = useState([0])
   const [load,setLoad] = useState(false)
-
   const params = useParams();
+  
   // console.log(params.id)
   useEffect(() => {
 

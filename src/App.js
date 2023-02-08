@@ -1,6 +1,6 @@
 import './App.scss';
 import './media.scss'
-import { BrowserRouter, Routes, Route, Link } from 'react-router-dom'
+import { BrowserRouter, Routes, Route, Link,useNavigate } from 'react-router-dom'
 import Main from './Component/Main'
 import Recipe from './Component/Recipe'
 import Detail from './Component/Detail'
@@ -26,7 +26,7 @@ import { Pagination, Navigation } from "swiper";
 
 
 function App() {
-
+  // const navigate = useNavigate();
   return (
 
     <BrowserRouter>
@@ -35,7 +35,7 @@ function App() {
       <main>
         <div className='mainbox-tab'>
         <Link to="/"><button><p>Foody</p></button></Link>
-
+      
         </div>
         <Routes>
           <Route path="/" element={<Main/>}></Route>

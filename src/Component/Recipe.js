@@ -14,6 +14,10 @@ const Recipe = () => {
   const [load,setLoad] = useState(false)
   const navigate = useNavigate();
 
+  const goBack = () => {
+    navigate(-1);
+  }
+
   useEffect(() => {
     fetch('http://openapi.foodsafetykorea.go.kr/api/88ec610d178b41408c5b/COOKRCP01/json/1/800')
       .then(response => response.json())
@@ -70,6 +74,7 @@ const goDetail = (obj)=>{
                 <button onClick={()=>setCount(3)}>볶음</button>
                 <button onClick={()=>setCount(4)}>구이</button>
                 <button onClick={()=>setCount(5)}>곁들임</button>
+                {/* <button className='prev' onClick={goBack}><img src='/img/prev-button.png'></img></button> */}
         </div>
         <div className='flexbox'>
       {
