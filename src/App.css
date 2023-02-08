@@ -135,10 +135,20 @@ code,
   line-height: 1.7;
 }
 #root main .mySwiper .swiper-button-prev {
-  color: black;
+  background-image: url(../public/img/prev.png);
+  background-position: center;
+  background-size: 100% auto;
+  background-repeat: no-repeat;
 }
 #root main .mySwiper .swiper-button-next {
-  color: black;
+  background-image: url(../public/img/next.png);
+  background-position: center;
+  background-size: 100% auto;
+  background-repeat: no-repeat;
+}
+#root main .mySwiper .swiper-button-next::after,
+#root main .mySwiper .swiper-button-prev::after {
+  display: none;
 }
 #root main .flexbox {
   overflow: auto;
@@ -258,11 +268,11 @@ code,
   padding: 0 10px;
 }
 #root main .big-box .main-imgbox .detail .recipe-go:hover {
-  background: #f8c4a1;
+  background: #fab98e;
   color: #000;
   border: none;
   font-size: 1rem;
-  transition: all 0.3s ease-in-out;
+  transition: all 0.5s ease-in-out;
   cursor: pointer;
 }
 #root main .big-box .loop {
@@ -350,8 +360,8 @@ code,
   cursor: pointer;
   font-size: 1.5rem;
   background-color: transparent;
-  transition: all 0.5s;
 }
 #root main .detail-content .detail-right .how-go:hover {
-  background-color: #f8c4a1;
+  background-color: #fab98e;
+  transition: all 0.5s ease-in-out;
 }/*# sourceMappingURL=App.css.map */

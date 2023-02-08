@@ -1,0 +1,299 @@
+@media (max-width:768px){
+    #root{
+
+      figure{
+        width: 80%;
+        margin: 0 auto;
+        
+      }
+      main{
+        width:80%;
+        section{
+          display: flex;
+          flex-direction: column;
+          align-items: center;
+          padding-top: 10px;
+        }
+        .mySwiper{
+          width: 100%;
+          height: 50vh;
+          display: flex;
+          flex-direction: column;
+          margin-top: 5%;
+          align-items: center;
+          text-align: center;
+          .swiper-pagination-clickable .swiper-pagination-bullet{
+            background-color: #000;
+          }
+          .swiper-wrapper{
+            display: flex;
+            align-items: center;
+            .swiper-slide{
+              display: flex;
+              justify-content: center;
+              align-items: center;
+              .method{
+                width: 100%;
+                height: 40vh;
+                display: flex;
+                flex-direction: column;
+                justify-content: space-between;
+              }
+            }
+          }
+        }
+        .flexbox{
+          overflow-x: hidden;
+            display: flex;
+            .recipe-content{
+              width: 40%;
+              display: flex;
+              flex-direction: column;
+              align-items: center;
+              justify-content: space-between;
+              margin-bottom: 1.25rem;
+              line-height: 2.5;
+              
+              &:hover{
+                transform: translateY(-3px);
+              }
+              h1{
+                font-size: 1rem;
+              }
+            }
+        }
+        
+        .tab{
+          width: 100%;
+          button{
+              width: 100%;
+              background-color:transparent;
+              border: none;
+              color: #000;
+              cursor: pointer;
+              font-family: "good";   
+              font-size: 1.25rem;
+              font-weight: 700;
+          }
+        }
+        .big-box{
+
+          .main-imgbox{
+            width:60%;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            img{
+              width: 100%; 
+            }
+          }
+          .loop{
+            margin-right: 50px;
+            
+            img{
+              width: 6rem;
+              height: 6rem;
+            }
+          }
+        }
+        .detail-content{
+          .detail-left{
+            padding-top: 0;
+            width: 40%;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-around;
+            align-items: center;
+            img{
+              width: 100%;
+              border-radius: 25px;
+              box-shadow: 3px 3px 10px rgb(146, 146, 146);
+            }
+          }
+          .detail-right{
+            width: 40%;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-around;
+            align-items: center;
+            span{
+              line-height: 2;
+              font-size: 1.2rem;
+            }
+            h1{
+                font-size: 1.5rem;
+            }
+          }
+        }
+      }
+    }
+    
+    
+} //ipad-mini
+@media (max-width:390px){
+    #root{
+        .mainbox{
+          width: 100%;
+          height: 100vh;
+          display: flex;
+          align-items: center;
+          .Whole{
+            filter: blur(20px) ;
+            position: fixed;
+            width: 100%;
+            z-index: -1;
+            
+            
+          }
+        }
+      
+        figure{
+          width: 80%;
+          margin: 0 auto;
+        }
+        main{
+          width:90%;
+          section{
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            padding-top: 10px;
+          }
+          .mySwiper{
+            width: 100%;
+            height: 50vh;
+            display: flex;
+            flex-direction: column;
+            margin-top: 5%;
+            align-items: center;
+            text-align: center;
+            .swiper-pagination-clickable .swiper-pagination-bullet{
+              background-color: #000;
+            }
+            .swiper-wrapper{
+              display: flex;
+              align-items: center;
+              .swiper-slide{
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                .method{
+                    width: 100%;
+                    height: 40vh;
+                    display: flex;
+                    flex-direction: column;
+                    justify-content: space-between;
+                  img{
+                    width: 7.5rem;
+                    height: 4.5rem;
+                    border-radius: 25px;
+                  }
+                  p{
+                    line-height: 1.7;
+                    font-size: .75rem;
+                  }
+                }
+              }
+            }
+          }
+          .flexbox{
+            overflow: auto;
+            width: 100%;
+              height: 50vh;
+              display: flex;
+              flex-wrap: wrap;
+              justify-content: center;
+              .recipe-content{
+                width: 100%;                
+              }
+          }
+          
+          .tab{
+            width: 100%;
+            display: flex;
+            height: 3.125rem;
+            button{
+                font-size: 14px;
+            }
+          }
+          .big-box{
+            .main-imgbox{
+              width:100%;
+              display: flex;
+              img{
+                width: 80%; 
+              }
+              .detail{
+                width: 80%;
+                span{
+                  font-size: 1.875rem;
+                }
+            }
+            }
+            .loop{
+              display: flex;
+              flex-direction: row;
+              align-items: flex-end;
+              animation: bannermove 10s linear infinite;
+              width: 100%;
+              margin-right: 100px;
+              @keyframes bannermove {
+                0% {
+                  transform: translate(0, 0);
+                }
+                100% {
+                  transform: translate(-100%, 0%);
+                }
+              }
+              img{
+                width: 3.5rem;
+                height: 3.5rem;
+                margin: 0 5px;
+                border-radius: 15px;
+              }
+            }
+          }
+          .detail-content{
+            width: 100%;
+            height: 55vh;
+            display: flex;
+            text-align: center;
+            justify-content: space-evenly;
+            .detail-left{
+              padding-top: 0;
+              width: 100%;
+              display: flex;
+              justify-content: space-around;
+              img{
+                width: 100%;
+              }
+              .info{
+                width: 100%;
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                font-size: 1.125rem;
+                line-height: 1.7;
+                p{
+                    font-size: 1rem;
+                }
+              }
+            }
+            .detail-right{
+              width: 60%;
+              display: flex;
+              flex-wrap: wrap;
+              justify-content: space-around;
+              align-items: center;
+              padding-top: 10%;
+              span{
+                line-height: 2;
+                font-size: .75rem;
+              }
+            }
+          }
+        }
+      }
+      
+      
+}

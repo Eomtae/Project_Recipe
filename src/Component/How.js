@@ -1,5 +1,6 @@
 import React from 'react'
 import '../App.scss'
+import '../media.scss'
 import { useEffect, useState } from 'react'
 import {useParams ,useLocation } from 'react-router-dom'
 import { BrowserRouter, Route, Routes,Link,NavLink} from 'react-router-dom';
