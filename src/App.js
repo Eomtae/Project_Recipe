@@ -1,4 +1,5 @@
 import './App.scss';
+import './media.scss'
 import { BrowserRouter, Routes, Route, Link } from 'react-router-dom'
 import Main from './Component/Main'
 import Recipe from './Component/Recipe'
