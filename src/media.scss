@@ -62,7 +62,22 @@
               }
             }
         }
-        
+        .mainbox-tab{
+          width: 100%;
+          display: flex;
+          justify-content: space-between;
+          align-items: center;
+          .back{
+            width: 10%;
+            background-color: transparent;
+            border: none;
+            cursor: pointer;
+            img{
+              width: 100%;
+            }
+          }
+      }
+
         .tab{
           width: 100%;
           button{
@@ -152,7 +167,8 @@
           margin: 0 auto;
         }
         main{
-          width:90%;
+          width:95%;
+          height: 70vh;
           section{
             display: flex;
             flex-direction: column;
@@ -207,7 +223,22 @@
                 width: 100%;                
               }
           }
-          
+          .mainbox-tab{
+            width: 100%;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            .back{
+              width: 10%;
+              background-color: transparent;
+              border: none;
+              cursor: pointer;
+              img{
+                width: 150%;
+              }
+            }
+        }
+    
           .tab{
             width: 100%;
             display: flex;
@@ -237,6 +268,7 @@
               animation: bannermove 10s linear infinite;
               width: 100%;
               margin-right: 100px;
+              // padding-top: 20%;
               @keyframes bannermove {
                 0% {
                   transform: translate(0, 0);

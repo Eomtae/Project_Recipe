@@ -2,7 +2,7 @@ import React from 'react'
 import '../App.scss';
 import '../media.scss'
 import { useEffect, useState } from 'react'
-import {Link,useNavigate} from 'react-router-dom'
+import {Link} from 'react-router-dom'
 
 
 
@@ -10,7 +10,7 @@ const Main = () => {
   const [count,setCount] = useState();
   const [data, setData] = useState([]);
   const [arr,setArr] = useState([])
-  
+
 
 
   useEffect(() => {
@@ -60,7 +60,7 @@ const Main = () => {
 
   
   return (
-    
+
     <figure>
         <div className='big-box'>
           <div className='main-imgbox'>

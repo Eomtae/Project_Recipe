@@ -12,12 +12,10 @@ import { Swiper, SwiperSlide } from 'swiper/react';
 
 
 // Styles must use direct files imports
-// import 'swiper/swiper.min.css'; // core Swiper
-// import 'swiper/modules/navigation/navigation.min.css'; // Navigation module
-// import 'swiper/modules/pagination/pagination.min.css'; // Pagination module
 import 'swiper/css'
 import 'swiper/css/navigation'
-import 'swiper/css/pagination'
+// import "swiper/css/navigation";
+
 
 
 const How = () => {
@@ -95,9 +93,9 @@ return (
       slidesPerGroup={3}
       loop={true}
       loopFillGroupWithBlank={true}
-      pagination={{
-        clickable: true,
-      }}
+      // pagination={{
+      //   clickable: true,
+      // }}
       navigation={true}
       modules={[Pagination, Navigation]}
       className="mySwiper "

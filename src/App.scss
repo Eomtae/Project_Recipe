@@ -17,6 +17,26 @@
   font-weight: normal;
   font-style: normal;
 }
+$defaultDuration: .3s;
+$primaryColour: #ececec;
+$secondaryColour: #666;
+$shadowColour: rgba(0, 0, 0, .6);
+
+@mixin hideTapHighlightColor() {
+  //Prevent highlight colour when element is tapped
+  -webkit-tap-highlight-color: rgba(0,0,0,0);
+}
+
+@mixin hardwareAccel() {
+  //Improve performance on mobile/tablet devices
+  transform: translateZ(0);
+}
+
+@mixin improveAntiAlias() {
+  //Improve aliasing on mobile/tablet devices
+  box-shadow: 0 0 1px rgba(0, 0, 0, 0);
+}
+
 html,
 body {
   margin: 0 auto;
@@ -101,6 +121,7 @@ code,
     border-radius: 25px;
     box-shadow: 3px 3px 10px rgb(151, 150, 150);
     position: relative;
+
     section{
       display: flex;
       flex-direction: column;
@@ -115,9 +136,9 @@ code,
       margin-top: 5%;
       align-items: center;
       text-align: center;
-      .swiper-pagination-clickable .swiper-pagination-bullet{
-        background-color: #000;
-      }
+      // .swiper-pagination-clickable .swiper-pagination-bullet{
+      //   background-color: #000;
+      // }
       .swiper-wrapper{
         display: flex;
         align-items: center;
@@ -198,9 +219,35 @@ code,
       background: rgba(33, 122, 244, .1);  /*스크롤바 뒷 배경 색상*/
   }
     .mainbox-tab{
-        width: 70%;
+        width: 100%;
         display: flex;
-        button{
+        justify-content: space-between;
+        align-items: center;
+        .back{
+          width: 10%;
+          background-color: transparent;
+          border: none;
+          cursor: pointer;
+          @include hideTapHighlightColor();
+          @include hardwareAccel();
+          @include improveAntiAlias();
+          img{
+            width: 50%;
+          }
+        }
+        .back:hover{
+          animation-name: pulse-grow;
+          animation-duration: $defaultDuration;
+          animation-timing-function: linear;
+          animation-iteration-count: infinite;
+          animation-direction: alternate;
+        }
+        @keyframes pulse-grow {
+          to {
+            transform: scale(1.1);
+          }
+        }
+        .home{
             width: 100%;
             background-color:transparent;
             border: none;
@@ -267,18 +314,50 @@ code,
           z-index: 888;
           font-size: 1rem;
           font-family: "good";
-          border-radius: 25px;
+          border-radius: 10px;
           padding:0 10px;
-         }
-         .recipe-go:hover{
-          background: #fab98e;
-          color: #000;
+          @include hideTapHighlightColor();
+          @include hardwareAccel();
+          @include improveAntiAlias();
+        }
+        .recipe-go:hover{
+          background: #FF9700;
+          color: #FFF;
           border: none;
           font-size: 1rem;
           transition: all .5s ease-in-out;
           cursor: pointer;
-          
+          animation-name: shake;
+          animation-duration: 1s;
+          animation-timing-function: ease-in-out;
+          animation-iteration-count: 1;
+  
          }
+         @keyframes shake {
+          16.65% {
+            transform: skew(-12deg);
+          }
+        
+          33.3% {
+            transform: skew(10deg);
+          }
+        
+          49.95% {
+            transform: skew(-6deg);
+          }
+        
+          66.6% {
+            transform: skew(4deg);
+          }
+        
+          83.25% {
+            transform: skew(-2deg);
+          }
+        
+          100% {
+            transform: skew(0);
+          }
+        }
       }
       }
       .loop{
@@ -354,19 +433,26 @@ code,
           width: 13rem;
           height: 3rem;
           background-color: transparent;
-          border-radius: 25px;
+          border-radius: 10px;
           border: none;
           color: #000;
           font-family: 'All';
           cursor: pointer;
           font-size: 1.5rem;
           background-color: transparent;
-          
+          @include hideTapHighlightColor();
+          @include hardwareAccel();
+          @include improveAntiAlias();
         }
         
         .how-go:hover{
-          background-color: #fab98e;
+          background-color: #FF9700;
+          color: #FFF;
           transition: all .5s ease-in-out;
+          animation-name: shake;
+          animation-duration: 1s;
+          animation-timing-function: ease-in-out;
+          animation-iteration-count: 1;
         
          }
       }
