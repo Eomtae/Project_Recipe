@@ -22,7 +22,7 @@ const Detail = () => {
     
     // const result = data.filter(object => object.RCP_NM == params.id);
   useEffect(() => {
-    fetch('http://openapi.foodsafetykorea.go.kr/api/88ec610d178b41408c5b/COOKRCP01/json/1/800')
+    fetch('https://openapi.foodsafetykorea.go.kr/api/88ec610d178b41408c5b/COOKRCP01/json/1/800')
       .then(response => response.json())
       .then(
         response => 

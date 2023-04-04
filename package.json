@@ -22,7 +22,7 @@
     "build": "react-scripts build",
     "test": "react-scripts test",
     "eject": "react-scripts eject",
-    "homepage" : "http://eomtae.github.io/Project_Recipe"
+    "homepage": "http://eomtae.github.io/Project_Recipe"
   },
   "eslintConfig": {
     "extends": [

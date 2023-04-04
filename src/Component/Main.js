@@ -14,7 +14,7 @@ const Main = () => {
 
 
   useEffect(() => {
-    fetch('http://openapi.foodsafetykorea.go.kr/api/88ec610d178b41408c5b/COOKRCP01/json/1/30')
+    fetch('https://openapi.foodsafetykorea.go.kr/api/88ec610d178b41408c5b/COOKRCP01/json/1/30')
       .then(response => response.json())
       .then(
         response => 
