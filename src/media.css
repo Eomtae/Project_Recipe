@@ -59,6 +59,21 @@
   #root main .flexbox .recipe-content h1 {
     font-size: 1rem;
   }
+  #root main .mainbox-tab {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  #root main .mainbox-tab .back {
+    width: 10%;
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+  }
+  #root main .mainbox-tab .back img {
+    width: 100%;
+  }
   #root main .tab {
     width: 100%;
   }
@@ -134,7 +149,7 @@
     margin: 0 auto;
   }
   #root main {
-    width: 90%;
+    width: 95%;
   }
   #root main section {
     display: flex;
@@ -189,6 +204,21 @@
   }
   #root main .flexbox .recipe-content {
     width: 100%;
+  }
+  #root main .mainbox-tab {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  #root main .mainbox-tab .back {
+    width: 10%;
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+  }
+  #root main .mainbox-tab .back img {
+    width: 150%;
   }
   #root main .tab {
     width: 100%;
@@ -285,7 +315,7 @@
 @media (max-width: 360px) {
   #root main {
     width: 100%;
-    height: 80vh;
+    height: auto;
   }
   #root main .mySwiper {
     width: 100%;

@@ -89,7 +89,6 @@ code,
 }
 #root main {
   width: 65%;
-  height: 70vh;
   overflow: hidden;
   padding: 2%;
   margin: 0 auto;
@@ -113,9 +112,6 @@ code,
   margin-top: 5%;
   align-items: center;
   text-align: center;
-}
-#root main .mySwiper .swiper-pagination-clickable .swiper-pagination-bullet {
-  background-color: #000;
 }
 #root main .mySwiper .swiper-wrapper {
   display: flex;
@@ -192,10 +188,46 @@ code,
   background: rgba(33, 122, 244, 0.1); /*스크롤바 뒷 배경 색상*/
 }
 #root main .mainbox-tab {
-  width: 70%;
+  width: 100%;
   display: flex;
+  justify-content: space-between;
+  align-items: center;
 }
-#root main .mainbox-tab button {
+#root main .mainbox-tab .back {
+  width: 10%;
+  background-color: transparent;
+  border: none;
+  cursor: pointer;
+  -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+  transform: translateZ(0);
+  box-shadow: 0 0 1px rgba(0, 0, 0, 0);
+}
+#root main .mainbox-tab .back img {
+  width: 50%;
+}
+#root main .mainbox-tab .back:hover {
+  -webkit-animation-name: pulse-grow;
+          animation-name: pulse-grow;
+  -webkit-animation-duration: 0.3s;
+          animation-duration: 0.3s;
+  -webkit-animation-timing-function: linear;
+          animation-timing-function: linear;
+  -webkit-animation-iteration-count: infinite;
+          animation-iteration-count: infinite;
+  -webkit-animation-direction: alternate;
+          animation-direction: alternate;
+}
+@-webkit-keyframes pulse-grow {
+  to {
+    transform: scale(1.1);
+  }
+}
+@keyframes pulse-grow {
+  to {
+    transform: scale(1.1);
+  }
+}
+#root main .mainbox-tab .home {
   width: 100%;
   background-color: transparent;
   border: none;
@@ -203,7 +235,7 @@ code,
   cursor: pointer;
   font-family: "All";
 }
-#root main .mainbox-tab button p {
+#root main .mainbox-tab .home p {
   font-family: "All";
   font-size: 2rem;
   font-weight: 700;
@@ -212,9 +244,9 @@ code,
   font-size: 2rem;
 }
 #root main .tab {
-  width: 70%;
+  width: 100%;
   display: flex;
-  height: 3.125rem;
+  height: 4.125rem;
 }
 #root main .tab button {
   width: 100%;
@@ -264,16 +296,67 @@ code,
   z-index: 888;
   font-size: 1rem;
   font-family: "good";
-  border-radius: 25px;
+  border-radius: 10px;
   padding: 0 10px;
+  -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+  transform: translateZ(0);
+  box-shadow: 0 0 1px rgba(0, 0, 0, 0);
 }
 #root main .big-box .main-imgbox .detail .recipe-go:hover {
-  background: #fab98e;
-  color: #000;
+  background: #FF9700;
+  color: #FFF;
   border: none;
   font-size: 1rem;
   transition: all 0.5s ease-in-out;
   cursor: pointer;
+  -webkit-animation-name: shake;
+          animation-name: shake;
+  -webkit-animation-duration: 1s;
+          animation-duration: 1s;
+  -webkit-animation-timing-function: ease-in-out;
+          animation-timing-function: ease-in-out;
+  -webkit-animation-iteration-count: 1;
+          animation-iteration-count: 1;
+}
+@-webkit-keyframes shake {
+  16.65% {
+    transform: skew(-12deg);
+  }
+  33.3% {
+    transform: skew(10deg);
+  }
+  49.95% {
+    transform: skew(-6deg);
+  }
+  66.6% {
+    transform: skew(4deg);
+  }
+  83.25% {
+    transform: skew(-2deg);
+  }
+  100% {
+    transform: skew(0);
+  }
+}
+@keyframes shake {
+  16.65% {
+    transform: skew(-12deg);
+  }
+  33.3% {
+    transform: skew(10deg);
+  }
+  49.95% {
+    transform: skew(-6deg);
+  }
+  66.6% {
+    transform: skew(4deg);
+  }
+  83.25% {
+    transform: skew(-2deg);
+  }
+  100% {
+    transform: skew(0);
+  }
 }
 #root main .big-box .loop {
   display: flex;
@@ -282,7 +365,6 @@ code,
   -webkit-animation: bannermove 100s linear infinite;
           animation: bannermove 100s linear infinite;
   width: 120px;
-  position: absolute;
   right: 0;
   margin-right: 100px;
 }
@@ -353,15 +435,27 @@ code,
   width: 13rem;
   height: 3rem;
   background-color: transparent;
-  border-radius: 25px;
+  border-radius: 10px;
   border: none;
   color: #000;
   font-family: "All";
   cursor: pointer;
   font-size: 1.5rem;
   background-color: transparent;
+  -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+  transform: translateZ(0);
+  box-shadow: 0 0 1px rgba(0, 0, 0, 0);
 }
 #root main .detail-content .detail-right .how-go:hover {
-  background-color: #fab98e;
+  background-color: #FF9700;
+  color: #FFF;
   transition: all 0.5s ease-in-out;
+  -webkit-animation-name: shake;
+          animation-name: shake;
+  -webkit-animation-duration: 1s;
+          animation-duration: 1s;
+  -webkit-animation-timing-function: ease-in-out;
+          animation-timing-function: ease-in-out;
+  -webkit-animation-iteration-count: 1;
+          animation-iteration-count: 1;
 }/*# sourceMappingURL=App.css.map */
