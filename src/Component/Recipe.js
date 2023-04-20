@@ -4,11 +4,7 @@ import '../media.scss'
 import { useEffect, useState } from 'react'
 import {useNavigate} from 'react-router-dom';
 
-
 const Recipe = () => {
-  // const location = useLocation(); 
-  //   console.log(location)
-  
   const [arr, setArr] = useState([])
   const [count, setCount] = useState([0])
   const [load, setLoad] = useState(false)
@@ -44,13 +40,8 @@ const Recipe = () => {
     boil = Row && Row.filter((obj) => obj.RCP_WAY2 == '끓이기')
     guitar = Row && Row.filter((obj) => obj.RCP_WAY2 == '기타')
     
-    // console.log(data)
-    // asdf()
     let dataarr = [boil, fry, steam, bog, roast, guitar]
     setArr(dataarr)
-    // console.log(arr);
-
-
   }
 
   const goDetail = (obj) => {
@@ -65,7 +56,6 @@ const Recipe = () => {
   }
   return (
     <>
-       
       <section>
         <div className='tab'>
           <button onClick={() => setCount(0)}>탕</button>
@@ -80,12 +70,10 @@ const Recipe = () => {
           {
             load ? arr && arr[count].map((obj, key) => {
               return (
-
                 <div onClick={() => { goDetail(obj) }} className='recipe-content' key={key}>
                   <img src={obj.ATT_FILE_NO_MAIN} alt="" />
                   <h1 >{obj.RCP_NM}</h1>
                 </div>
-
               )
             }) : null
           }

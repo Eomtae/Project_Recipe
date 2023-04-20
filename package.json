@@ -1,5 +1,5 @@
 {
-  "homepage": "./",
+  "homepage": "https://eomtae.github.io/Project_Recipe/",
   "name": "recipe",
   "version": "0.1.0",
   "private": true,
@@ -17,12 +17,11 @@
   },
   "scripts": {
     "predeploy": "npm run build",
-    "deploy": "gh-pages -d build",
     "start": "react-scripts start",
     "build": "react-scripts build",
+    "deploy": "gh-pages -d build",
     "test": "react-scripts test",
-    "eject": "react-scripts eject",
-    "homepage": "http://eomtae.github.io/Project_Recipe"
+    "eject": "react-scripts eject"    
   },
   "eslintConfig": {
     "extends": [

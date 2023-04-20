@@ -11,9 +11,9 @@ import Nav from './Component/Nav';
 function App() {
   return (
 
-    <BrowserRouter>
+    <BrowserRouter basename='/Project_Recipe'>
     <div className='mainbox'>
-    <img className='Whole' src='/img/background.jpg'></img>
+    <img className='Whole' src='/Project_Recipe/img/background.jpg'></img>
       <main>
         <Nav/>
         <Routes>

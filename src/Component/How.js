@@ -14,14 +14,9 @@ import { Swiper, SwiperSlide } from 'swiper/react';
 // Styles must use direct files imports
 import 'swiper/css'
 import 'swiper/css/navigation'
-// import "swiper/css/navigation";
-
-
 
 const How = () => {
-  
   const [arr,setArr] = useState()
-  
   const params = useParams();
   
   // console.log(params.id)
@@ -54,16 +49,11 @@ const How = () => {
     bog = Row && Row.filter((obj) => obj.RCP_WAY2 == '볶기')
     boil = Row && Row.filter((obj) => obj.RCP_WAY2 == '끓이기')
     guitar = Row && Row.filter((obj) => obj.RCP_WAY2 == '기타')
-    
     // console.log(data)
     // asdf()
-    
-   
     // console.log(params.id)
     // new(dataarr)
-    
     // const result=[];
-    
     let abc=  Row.filter(object => object.RCP_NM == params.id)
     // console.log(abc)
     // console.log(abc[0])
@@ -72,10 +62,8 @@ const How = () => {
      setArr(abc[0])
     }
      // console.log(arr);
-     
      // console.log(last)
      // console.log(result)
-
 // console.log(arr)
 // let how ;
 // if(arr!==undefined){

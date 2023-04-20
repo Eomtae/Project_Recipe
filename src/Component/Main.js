@@ -4,15 +4,9 @@ import '../media.scss'
 import { useEffect, useState } from 'react'
 import {Link} from 'react-router-dom'
 
-
-
 const Main = () => {
   
   const [data, setData] = useState([]);
-  
-
-
-
   useEffect(() => {
     fetch('https://openapi.foodsafetykorea.go.kr/api/88ec610d178b41408c5b/COOKRCP01/json/1/30')
       .then(response => response.json())
@@ -43,7 +37,6 @@ const Main = () => {
     guitar = Row && Row.filter((obj) => obj.RCP_WAY2 == '기타')
     setData(Row)
     let dataarr = [boil,fry,steam,bog,roast,guitar]
-    
   }
   useEffect(()=>{
     const elLoop = document.querySelector(".loop");
@@ -54,17 +47,13 @@ const Main = () => {
         elLoop.innerHTML += `<img src="${data[i].ATT_FILE_NO_MK}" alt="">`;
       }
     }
-    
   },[data])
-
-
   
   return (
-
     <figure>
         <div className='big-box'>
           <div className='main-imgbox'>
-          <img src="./img/mainimg.png" alt=""/>
+          <img src="/Project_Recipe/img/mainimg.png" alt="" />
           <div className='detail'>
           <span>
               건강하고 맛있는<br />요리의 세계로<br />떠나볼까요?</span>

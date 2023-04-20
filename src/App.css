@@ -84,11 +84,11 @@ code,
   z-index: -1;
 }
 #root figure {
-  width: 80%;
+  width: 100%;
   margin: 0 auto;
 }
 #root main {
-  width: 65%;
+  width: 70%;
   overflow: hidden;
   padding: 2%;
   margin: 0 auto;
@@ -263,6 +263,12 @@ code,
 }
 #root main .big-box {
   padding-top: 10%;
+  display: flex;
+  height: 70vh;
+  align-items: flex-start;
+  justify-content: center;
+  overflow: hidden;
+  position: relative;
 }
 #root main .big-box .main-imgbox {
   width: 70%;
@@ -279,7 +285,6 @@ code,
   flex-direction: column;
   justify-content: space-evenly;
   align-items: center;
-  margin-left: 10%;
 }
 #root main .big-box .main-imgbox .detail span {
   text-align: center;
@@ -359,14 +364,15 @@ code,
   }
 }
 #root main .big-box .loop {
+  align-items: flex-end;
   display: flex;
   flex-direction: column;
-  align-items: flex-end;
-  -webkit-animation: bannermove 100s linear infinite;
-          animation: bannermove 100s linear infinite;
-  width: 120px;
   right: 0;
-  margin-right: 100px;
+  width: 7.5rem;
+  position: absolute;
+  right: 5%;
+  -webkit-animation: bannermove 500s linear infinite;
+  animation: bannermove 500s linear infinite;
 }
 @-webkit-keyframes bannermove {
   0% {
