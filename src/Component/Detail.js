@@ -1,34 +1,31 @@
 import React from 'react'
 import '../App.scss'
 import '../media.scss'
-import { useEffect, useState } from 'react'
-import {useParams ,useLocation } from 'react-router-dom'
-import { BrowserRouter, Route, Routes,Link,NavLink,useNavigate } from 'react-router-dom';
+import { useEffect } from 'react'
+import {useLocation } from 'react-router-dom'
+import { useNavigate } from 'react-router-dom';
 
 const Detail = () => {
     const location = useLocation(); 
     // console.log(location.state.obj);
-    const [data,setData] = useState();
     // console.log(data)
-    const params = useParams();
+    
     // console.log(params)
     const navigate = useNavigate();
     
     let detail = location.state.obj
 
-    const [arr,setArr] = useState([])
-    const [count,setCount] = useState([0])
-    const [load,setLoad] = useState(false)
+    
     
     // const result = data.filter(object => object.RCP_NM == params.id);
   useEffect(() => {
-    fetch('http://openapi.foodsafetykorea.go.kr/api/88ec610d178b41408c5b/COOKRCP01/json/1/800')
+    fetch('https://openapi.foodsafetykorea.go.kr/api/88ec610d178b41408c5b/COOKRCP01/json/1/800')
       .then(response => response.json())
       .then(
         response => 
         {
             init(response)
-            setLoad(true)
+            
         }
         )
       .catch(err => console.error(err));
@@ -50,9 +47,7 @@ const Detail = () => {
     bog = Row && Row.filter((obj) => obj.RCP_WAY2 == '볶기')
     boil = Row && Row.filter((obj) => obj.RCP_WAY2 == '끓이기')
     guitar = Row && Row.filter((obj) => obj.RCP_WAY2 == '기타')
-    // setData(Row)
-    let dataarr = [boil,fry,steam,bog,roast,guitar]
-    setArr(dataarr)
+    
 }
 
 const goHow = (detail)=>{

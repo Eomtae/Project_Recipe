@@ -1,4 +1,4 @@
-@media (max-width:768px){
+@media screen and (min-width:768px) and (max-width:1024px){
     #root{
 
       figure{
@@ -145,7 +145,7 @@
     
     
 } //ipad-mini
-@media (max-width:390px){
+@media screen and (min-width:390px) and (max-width:767px){
     #root{
         .mainbox{
           width: 100%;
@@ -328,7 +328,7 @@
       
       
 } //12 pro
-@media (max-width:360px){
+@media screen and (min-width:290px) and (max-width:389px){
   #root{
       main{
         width:100%;

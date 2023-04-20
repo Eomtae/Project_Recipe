@@ -7,14 +7,14 @@ import {Link} from 'react-router-dom'
 
 
 const Main = () => {
-  const [count,setCount] = useState();
+  
   const [data, setData] = useState([]);
-  const [arr,setArr] = useState([])
+  
 
 
 
   useEffect(() => {
-    fetch('http://openapi.foodsafetykorea.go.kr/api/88ec610d178b41408c5b/COOKRCP01/json/1/30')
+    fetch('https://openapi.foodsafetykorea.go.kr/api/88ec610d178b41408c5b/COOKRCP01/json/1/30')
       .then(response => response.json())
       .then(
         response => 
@@ -43,7 +43,7 @@ const Main = () => {
     guitar = Row && Row.filter((obj) => obj.RCP_WAY2 == '기타')
     setData(Row)
     let dataarr = [boil,fry,steam,bog,roast,guitar]
-    setArr(dataarr)
+    
   }
   useEffect(()=>{
     const elLoop = document.querySelector(".loop");
