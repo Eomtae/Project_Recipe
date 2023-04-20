@@ -1,13 +1,11 @@
 import './App.scss';
 import './media.scss'
-import { BrowserRouter, Routes, Route, Link } from 'react-router-dom'
+import { BrowserRouter, Routes, Route } from 'react-router-dom'
 import Main from './Component/Main'
 import Recipe from './Component/Recipe'
 import Detail from './Component/Detail'
 import How from './Component/How'
 import Nav from './Component/Nav';
-import React, { useRef, useState } from "react";
-
 
 
 function App() {

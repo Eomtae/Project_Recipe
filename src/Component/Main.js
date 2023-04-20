@@ -7,9 +7,9 @@ import {Link} from 'react-router-dom'
 
 
 const Main = () => {
-  const [count,setCount] = useState();
+  
   const [data, setData] = useState([]);
-  const [arr,setArr] = useState([])
+  
 
 
 
@@ -43,7 +43,7 @@ const Main = () => {
     guitar = Row && Row.filter((obj) => obj.RCP_WAY2 == '기타')
     setData(Row)
     let dataarr = [boil,fry,steam,bog,roast,guitar]
-    setArr(dataarr)
+    
   }
   useEffect(()=>{
     const elLoop = document.querySelector(".loop");

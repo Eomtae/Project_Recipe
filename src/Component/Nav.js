@@ -10,7 +10,7 @@ const Nav = () => {
   return (
     <div className='mainbox-tab'>
         <Link to="/"><button className='home'><p>Foody</p></button></Link>
-        <button className='back' onClick={back}><img src='/img/prev-button.png'></img></button>
+        <button className='back' onClick={back}><img src='/img/prev-button.png' alt="a"></img></button>
         </div>
   )
 }

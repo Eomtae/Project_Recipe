@@ -2,8 +2,8 @@ import React from 'react'
 import '../App.scss'
 import '../media.scss'
 import { useEffect, useState } from 'react'
-import {useParams ,useLocation } from 'react-router-dom'
-import { BrowserRouter, Route, Routes,Link,NavLink} from 'react-router-dom';
+import {useParams  } from 'react-router-dom'
+
 
 // Core modules imports are same as usual
 import { Navigation, Pagination } from 'swiper';
@@ -19,10 +19,9 @@ import 'swiper/css/navigation'
 
 
 const How = () => {
-  const [data, setData] = useState();
+  
   const [arr,setArr] = useState()
-  const [count,setCount] = useState([0])
-  const [load,setLoad] = useState(false)
+  
   const params = useParams();
   
   // console.log(params.id)
@@ -34,7 +33,6 @@ const How = () => {
         response => 
         {
             init(response)
-            setLoad(true)
         }
         )
       .catch(err => console.error(err));
@@ -56,10 +54,10 @@ const How = () => {
     bog = Row && Row.filter((obj) => obj.RCP_WAY2 == '볶기')
     boil = Row && Row.filter((obj) => obj.RCP_WAY2 == '끓이기')
     guitar = Row && Row.filter((obj) => obj.RCP_WAY2 == '기타')
-    setData(Row)
+    
     // console.log(data)
     // asdf()
-    let dataarr = [boil,fry,steam,bog,roast,guitar]
+    
    
     // console.log(params.id)
     // new(dataarr)
